@@ -1,0 +1,35 @@
+Início
+<inteiro: idade
+ inteiro: dataEvento
+ inteiro: numeroDeParticipantes
+ inteiro: dataAtual>
+
+programa {
+	funcao inicio() {
+	    Escreva("Informe a data do evento:")
+	    Leia(dataEvento)
+	    
+	    se (dataEvento > dataAtual)(
+	        Escreva("Cadastro inválido por data incompatível")
+	        )
+	        senao (
+	            Escreva("Informe sua idade:")
+	            Leia(idade)
+	   
+	                se (idade < 18 )(
+	                    Escreva("Cadastro inválido por idade incompatível")
+	                    )
+	                    senao (
+	                        Leia(numeroDeParticipantes)
+	                            se (numeroDeParticipantes <= 100) (
+	                                Escreva("Cadastro realizado com sucesso!!")
+	                                )
+	                                senao (
+	                                    Escreva("Cadastro inválido por excesso de participantes.")
+	                                      )
+	                           
+	                          )         
+	               )
+	               }
+        }
+        
